@@ -1,0 +1,463 @@
+.abc-container{
+    width: 100%;
+    height: 100%;
+}
+.abc-introduction{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/* login */
+.abc-introduction .abcIntroductionItem.login{
+	display:block;
+	width: 100%;
+	height: 100%;
+	background: url('../images/login-bg.jpg');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	/*padding-top: 1px;*/
+    /* border: 1px solid #ffffff; */
+}
+.abc-introduction .abcIntroductionItem.login .abc-introduction-logo{
+	color: #ffffff;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 20px;
+	margin-top: 50px;
+	text-indent: 5%;
+	user-select:none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+}
+.abc-introduction .abcIntroductionItem.login .abc-introduction-text{
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin-top: 60px;
+	margin-left: 80px;
+}
+.abc-introduction .abcIntroductionItem.login .abc-introduction-text h2{
+	margin-top: 100px;
+	font-size: 32px;
+	font-family: PingFangSC-Regular;
+	color: #ffffff;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.10);
+	user-select:none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+}
+.abc-introduction .abcIntroductionItem.login .abc-introduction-text h4{
+	margin: 20px 0;
+	font-size: 18px;
+	font-family: PingFangSC-Regular;
+	color: #FFFFFF;	
+	text-shadow: 0 2px 2px rgba(0,0,0,0.10);
+	user-select:none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+}
+.abc-introduction .abcIntroductionItem.login .login-container{
+	width: 265px;
+	height: 500px;
+	float:right;
+	margin-top: 60px;
+	margin-right: 80px;
+	background: #ffffff;
+	border-radius: 6px;
+}
+.abc-introduction .abcIntroductionItem.login .login-container .title{
+	text-indent: 30px;
+	margin-top: 50px;
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+}
+.abc-introduction .abcIntroductionItem.login .login-footer{
+	width: 80%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 5%;
+	left: 10%;
+}
+.abc-introduction .abcIntroductionItem.login .login-footer .goNext{
+	border: 2px solid #fff;
+    height: 45px;
+    width: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    margin: 0 auto;
+}
+.abc-introduction .abcIntroductionItem.login .login-footer .goNext img{
+	width: 16px;
+    vertical-align: middle;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-animation: imgmove 1s infinite;
+    animation: imgmove 1s infinite;
+}
+@keyframes imgmove{
+	from{
+	     top:3px; 
+	     }
+      to{
+	     top:20px;
+	}
+}
+/* aboutUs */
+.abc-introduction .abcIntroductionItem.aboutUs{
+	display:block;
+	width: 100%;
+	height: 100%;
+	background:#ffffff;
+}
+.abc-introduction .abcIntroductionItem.aboutUs .title{
+	font-family: PingFangSC-Regular;
+	font-size: 24px;
+	margin:100px 0;
+	text-align: center;
+	color: #3E3E3E;
+}
+.abc-introduction .abcIntroductionItem.aboutUs .description-text{
+	width:100%;
+	height: 500px;
+	margin:120px auto;
+	position: relative;
+}
+.abc-introduction .abcIntroductionItem.aboutUs .description-text .description-text-img{
+	width: 660px;
+	height:300px;
+	position: absolute;
+	left:250px;
+	top: 100px;
+	border-radius: 10px;
+	background:url(../images/description-img.jpg);
+	background-repeat: no-repeat;
+	background-size: 660px 300px;
+	color: #ffffff;
+}
+.abc-introduction .abcIntroductionItem.aboutUs .description-text .description-text-img h3{
+	margin-top:95px;
+	margin-bottom: 30px;
+	font-family: PingFangSC-Medium;
+	font-size:18px;
+	color: #FFFFFF;
+	line-height: 30px;
+	text-shadow: 0 2px 2px rgba(0,0,0,0.10);
+	text-align: center;
+}
+.abc-introduction .abcIntroductionItem.aboutUs .description-text .description-text-img h4{
+	font-family: PingFangSC-Regular;
+	font-size: 15px;
+	color: #FFFFFF;
+	line-height: 30px;
+	text-shadow: 0 2px 2px rgba(0,0,0,0.10);
+	text-align: center;
+}
+.abc-introduction .abcIntroductionItem.aboutUs .description-text .text{
+	width:800px;
+	height: 500px;
+	line-height: 500px;
+	margin:0 auto;
+	margin-right:60px;
+	float: right;
+	background: #FFFFFF;
+	box-shadow: -8px -8px 6px 0 rgba(236,236,236,0.80), 8px 8px 6px 0 rgba(236,236,236,0.80);
+}
+.abc-introduction .abcIntroductionItem.aboutUs .description-text .text .containerFirst{
+	display: block;
+	width: 500px;
+	height:80px;
+	float: right;
+	margin-top:150px;
+	margin-right:80px;
+	text-align: left;
+	white-space:normal;
+	word-break:break-all;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #404040;
+	letter-spacing:1px;
+	line-height:25px;
+}
+.abc-introduction .abcIntroductionItem.aboutUs .description-text .text .containerFirst_{
+	height:80px;
+	margin-top:110px !important; 
+	margin-right:80px !important;
+	word-break:normal !important;
+	word-wrap: break-word;/*只对英文起作用，以单词作为换行依据。*/
+	text-align:justify;/* css英文语句的两端对齐 */
+}
+.abc-introduction .abcIntroductionItem.aboutUs .description-text .text .containerSecond{
+	display: block;
+	width: 500px;
+	height:100px;
+	float: right;
+	margin-top: 20px;
+	margin-right:80px;
+	text-align: left;
+	white-space:normal;
+	word-break:break-all;
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #404040;
+	letter-spacing:1px;
+	line-height:25px;
+}
+.abc-introduction .abcIntroductionItem.aboutUs .description-text .text .containerSecond_{
+	height:200px;
+	margin-top:20px !important; 
+	margin-right:80px !important;
+	word-break:normal !important;
+	word-wrap: break-word;/*只对英文起作用，以单词作为换行依据。*/
+	text-align:justify;/* css英文语句的两端对齐 */
+}
+/* Stocks */
+.abc-introduction .abcIntroductionItem.abcStocks{
+	display:block;
+	width: 100%;
+	height: 100%;
+	background:#ffffff;
+	overflow: hidden;
+}
+.abc-introduction .abcIntroductionItem.abcStocks .title{
+	font-family: PingFangSC-Regular;
+    font-size: 24px;
+    margin: 100px 0;
+    text-align: center;
+    color: #3E3E3E;
+}
+.abc-introduction .abcIntroductionItem.abcStocks .introduction-products{
+	width:80%;
+	margin: 0 auto;
+	margin-top:60px;
+}
+.abc-introduction .abcIntroductionItem.abcStocks .introduction-products .introduction-products-item{
+	position: relative;
+	float: left;
+	width:25%;;
+	height: 140px;
+}
+.abc-introduction .abcIntroductionItem.abcStocks .introduction-products .introduction-products-item .abcdata-icon{
+	position: absolute;
+	width: 185px;
+	height:85px;
+	left: 50%;
+	top: 50%;
+	margin-left: -83px;
+	margin-top: -40px;
+	border-radius:5px;
+}
+.introduction-products-item .abcdata-icon.tencent{
+	background:url(../images/tencent_01.png) no-repeat;
+	background-position:7px 15px;
+}
+.introduction-products-item .abcdata-icon.htht{
+	background:url(../images/logo-htht.png) no-repeat;
+	background-position:7px 10px;
+}
+.introduction-products-item .abcdata-icon.momo{
+	background:url(../images/momo_01.png) no-repeat;
+	background-position:8px 15px;
+}
+.introduction-products-item .abcdata-icon.east_money{
+	background:url(../images/logo_east_money.png) no-repeat;
+	background-position:8px 15px;
+}
+.introduction-products-item .abcdata-icon.xdf{
+	background:url(../images/logo-xdf.png) no-repeat;
+	background-position:8px 15px;
+}
+.introduction-products-item .abcdata-icon.rcl{
+	background:url(../images/logo_rcl.png) no-repeat;
+	background-position:8px 20px;
+}
+.introduction-products-item .abcdata-icon.tal{
+	background:url(../images/logo_tal_01.png) no-repeat;
+	background-position:8px 15px;
+}
+.introduction-products-item .abcdata-icon.club{
+	background:url(../images/logo_lending_club.png) no-repeat;
+	background-position:8px 15px;
+}
+.introduction-products-item .abcdata-icon.ccl{
+	background:url(../images/logo_ccl.png) no-repeat;
+	background-position:8px 15px;
+}
+.introduction-products-item .abcdata-icon.tuhuashun{
+	background:url(../images/logo_tonghuashun.png) no-repeat;
+	background-position:8px 15px;
+}
+.introduction-products-item .abcdata-icon.vip{
+	background:url(../images/vip_01.png) no-repeat;
+	background-position:8px 15px;
+}
+.introduction-products-item .abcdata-icon.cheetah{
+	background:url(../images/cheetah_01.png) no-repeat;
+	background-position:8px 15px;
+}
+/* prediction */
+.abc-introduction .abcIntroductionItem.abcPrediction{
+	display:block;
+	width: 100%;
+	height: 100%;
+	background:#ffffff;
+	overflow: hidden;
+	background: url('../images/img-price.jpg');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+.abc-introduction .abcIntroductionItem.abcPrediction .title{
+    font-family: PingFangSC-Regular;
+	font-size: 24px;
+	margin: 100px 0;
+	text-align: center;
+	color: #FFFFFF;
+}
+/* contact */
+.abc-introduction .abcIntroductionItem.abcContact{
+	display:block;
+	width: 100%;
+	height: 100%;
+	background:#ffffff;
+	overflow: hidden;
+	position: relative;
+}
+.abc-introduction .abcIntroductionItem.abcContact .title{
+	font-family: PingFangSC-Regular;
+    font-size: 24px;
+    margin: 120px 0;
+    text-align: center;
+    color: #3E3E3E;
+}
+.abc-introduction .abcIntroductionItem.abcContact .contact-warp{
+	display: -webkit-flex; /* Safari Chrome */
+	display: -moz-flex; /* Firefox 18+ */
+	display: -ms-flexbox; /* IE 10 */
+	display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+	width: 80%;
+	margin:0 auto;
+	flex-direction:row;
+	flex-wrap:wrap;
+	align-items:center;
+	/*每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍*/
+	justify-content: space-around;
+}
+.abc-introduction .abcIntroductionItem.abcContact .contact-warp .contact-warp-item{
+	display: block;
+	width: 380px;
+	height: 425px;
+	border: 2px solid #EEEEEE;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 20px;
+	margin:10px;
+	font-family:Georgia;
+	flex-grow:0;
+	/*flex-grow属性定义项目的放大比例，默认为0*/
+	flex-shrink:1;
+	/*flex-shrink属性定义了项目的缩小比例，默认为1*/
+	align-self:auto;
+	/* align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch*/
+}
+.abc-introduction .abcIntroductionItem.abcContact .contact-warp .contact-warp-item:first-child .email-img{
+	 width: 80px;
+	 height:80px;
+	 margin:80px auto;
+	 background: url(../images/abcEmail.png);
+	 background-repeat: no-repeat;
+	 background-size:cover;
+}
+.abc-introduction .abcIntroductionItem.abcContact .contact-warp .contact-warp-item:first-child .email-title{
+	 margin-top:80px;
+	 text-align:center;
+	 font-family:'Courier New', Courier, monospace;
+	 font-size: 20px;
+	 color: #333333;
+}
+.abc-introduction .abcIntroductionItem.abcContact .contact-warp .contact-warp-item:first-child .email-title-item{
+	 margin:10px auto;
+	 text-align:center;
+	 font-family:'Courier New', Courier, monospace;
+	 font-size: 14px;
+	 color: #666666;
+}
+.abc-introduction .abcIntroductionItem.abcContact .contact-warp .contact-warp-item:nth-child(2) .demo-img{
+	 width: 80px;
+	 height:80px;
+	 margin:80px auto;
+	 background: url(../images/abcDemo.png);
+	 background-repeat: no-repeat;
+	 background-size:cover;
+}
+.abc-introduction .abcIntroductionItem.abcContact .contact-warp .contact-warp-item:nth-child(2) .demo-title{
+	 margin-top:80px;
+	 text-align:center;
+	 font-family:'Courier New', Courier, monospace;
+	 font-size: 20px;
+	 color: #333333;
+}
+.abc-introduction .abcIntroductionItem.abcContact .contact-warp .contact-warp-item:nth-child(2) .demo-title-item{
+	 margin:10px auto;
+	 text-align:center;
+	 font-family:'Courier New', Courier, monospace;
+	 font-size: 14px;
+	 color: #666666;
+}
+.abc-introduction .abcIntroductionItem.abcContact .contact-warp .contact-warp-item:last-child .location-img{
+	 width: 80px;
+	 height:80px;
+	 margin:80px auto;
+	 background: url(../images/abcLocation.png);
+	 background-repeat: no-repeat;
+	 background-size:cover;
+}
+.abc-introduction .abcIntroductionItem.abcContact .contact-warp .contact-warp-item:last-child .location-title{
+	 margin-top:80px;
+	 text-align:center;
+	 font-family:'Courier New', Courier, monospace;
+	 font-size: 20px;
+	 color: #333333;
+}
+.abc-introduction .abcIntroductionItem.abcContact .contact-warp .contact-warp-item:last-child .location-title-item{
+	 margin:10px auto;
+	 text-align:center;
+	 font-family:'Courier New', Courier, monospace;
+	 font-size: 14px;
+	 color: #666666;
+}
+.abc-introduction .abcIntroductionItem.abcContact .abc-footer{
+	width: 100%;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	background: #333333;
+	color:#ffffff;
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	letter-spacing: 0;
+	position: absolute;
+	left: 0;
+	bottom:0;
+}
+/* 覆盖Swiper样式 */
+.swiper-container-vertical > .swiper-pagination-bullets{
+	right:20px !important;
+}
+.swiper-pagination-bullet{
+	width:14px !important;
+	height:14px !important;
+	border:2px solid #FFFFFF;
+	background: #333333 !important;
+}

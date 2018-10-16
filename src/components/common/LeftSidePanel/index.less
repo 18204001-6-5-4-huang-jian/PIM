@@ -1,0 +1,432 @@
+.left-sider-panel {
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    color: #fff;
+    width: 280px;
+    background-color: #191F28;
+    .ant-select-auto-complete {
+        display: block;
+        padding: 14px 14px 22px;
+
+        .ant-select-selection {
+            background-color: #000;
+        }
+
+        &.ant-select .ant-select-selection__rendered {
+            line-height: 25px;
+        }
+    }
+    .ant-select-search {
+        input.ant-input {
+            border-radius: 2px;
+            height: 25px;
+            border: 0;
+            color:#fff;
+        }
+    }
+
+    .company-container {
+        h2 {
+            font-size: 18px;
+            color: #DBE9F9;
+            padding-left: 18px;
+        }
+
+        .company-tabs {
+            overflow: hidden;
+            margin-top: 22px;
+
+            li {
+                float: left;
+                margin-left: 30px;
+                font-size: 12px;
+
+                &.active {
+                    a {
+                        background-color: #293342;
+                        color: #D7D7D7;
+                        border-top-left-radius: 6px;
+                        border-top-right-radius: 6px;
+                    }
+                }
+
+                a {
+                    display: block;
+                    width: 90px;
+                    text-align: center;
+                    line-height: 30px;
+                    color: #A6A6A6;
+                }
+               
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                height: 1px;
+                background-color: #343747;
+                clear: both;
+            }
+        }
+
+        .tab-panel-box {
+            height: calc(100vh - 213px);
+            overflow: auto;
+            // 全部公司
+            .company-list {
+                height: 100%;
+                .company-item {
+                    &-content {
+                        padding: 5px 0 5px 30px;
+                        border-right: 5px solid transparent;
+                        &.active {
+                            background-color: #293342;
+                            border-color: #417CD5;
+                            .company-info {
+                                color: #417CD5;
+                            }
+                        }
+    
+                        .anticon {
+                            font-size: 14px;
+                            vertical-align: middle;
+                        }
+                        &:hover{
+                            background-color: #293342;
+                        //  border-right: 5px solid #417CD5;
+                        .company-info{
+                                color: #417CD5;
+                            }
+                        }
+                    }
+    
+                    .company-info {
+                        color: #A6A6A6;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-left: 10px;
+    
+                        p {
+                            margin-bottom: 0;
+                            font-size: 14px;
+                        }
+    
+                        .company-country {
+                            display: inline-block;
+                            padding: 2px 0;
+                            margin-left: -2px;
+                            line-height: 12px;
+                            font-size: 12px;
+                            transform: scale(0.65);
+                            background-color: #2f7adc;
+                            color: #F2F7FD;
+                        }
+                        .company-code{
+                            display: inline-block;
+                            margin-left:2px;
+                        }
+                        .company-type{
+                            display: inline-block;
+                            padding: 2px 0;
+                            margin-left: 2px;
+                            line-height: 12px;
+                            font-size: 12px;
+                            transform: scale(0.65);
+                            background-color: #CA4900;
+                            color: #FFFFFF;
+                        }
+                    }
+    
+                    .enter-company {
+                        float: right;
+                        // display: none;
+                        margin-top: 10px;
+                        margin-right: 10px;
+                        color:#A6A6A6;
+                        text-decoration: none;
+                        .anticon.anticon-switcher{
+                            margin-right:4px;
+                        }
+                    }
+                }
+    
+                .opponent-company-list {
+                    margin-left: 30px;
+                    .add-opponent-btn {
+                        width: 100px;
+                        height: 30px;
+                        border-radius: 2px;
+                        margin: 10px 0;
+                        margin-left: 40px;
+                        padding: 0;
+                        color: #A6A6A6;
+                        border-color: #535353;
+                        font-size: 12px;
+                        background-color: transparent;
+    
+                        .anticon + span {
+                            margin-left: 4px;
+                        }
+
+                        &:hover {
+                            border-color: #417CD5;
+                            background-color: #417CD5;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            
+            //分组列表
+            .group-list {
+                height:100%;
+                 .group-item {
+                     .file-container{
+                         position: relative;
+                         cursor: pointer;
+                         height: 40px;
+                         line-height: 40px;
+                         .anticon.anticon-folder-open{
+                             margin-left: 20px;
+                         }
+                         .file-name{
+                             padding-left: 10px;
+                             color: #A6A6A6;
+                             user-select: none;
+                         }
+                         .anticon.anticon-ellipsis{
+                             color: #A6A6A6;
+                             transform:rotateZ(90deg);
+                             position: absolute;
+                             right: 10px;
+                             top: 12px;
+                         }
+                     }
+                    &-content {
+                        padding: 5px 0 5px 30px;
+                        border-right: 5px solid transparent;
+                        cursor: pointer;
+                        .anticon {
+                            font-size: 14px;
+                        }
+                        .group-item-content-company.active{
+                            background-color: #293342;
+                            border-right: 5px solid #417CD5;
+                            .group-info{
+                                color: #417CD5;
+                            }
+                        }
+                    }
+    
+                    .group-info {
+                        color: #A6A6A6;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-left: 10px;
+    
+                        p {
+                            margin-bottom: 0;
+                            font-size: 14px;
+                        }
+    
+                        .group-country {
+                            display: inline-block;
+                            padding: 2px 0;
+                            margin-left: -2px;
+                            line-height: 12px;
+                            font-size: 12px;
+                            transform: scale(0.65);
+                            background-color: #2f7adc;
+                            color: #F2F7FD;
+                        }
+                        .group-code{
+                            display: inline-block;
+                            margin-left:2px;
+                        }
+                        .group-type{
+                            display: inline-block;
+                            padding: 2px 0;
+                            margin-left: 2px;
+                            line-height: 12px;
+                            font-size: 12px;
+                            transform: scale(0.65);
+                            background-color: #CA4900;
+                            color: #FFFFFF;
+                        }
+                    }
+    
+                    .enter-group {
+                        float: right;
+                        // display: none;
+                        margin-top: 10px;
+                        margin-right: 10px;
+                        color:#A6A6A6;
+                        text-decoration: none;
+                        .anticon.anticon-switcher{
+                            margin-right:4px;
+                        }
+                    }
+                }
+    
+                .opponent-group-list {
+                    margin-left: 12px;
+                    .group-item-content:hover{
+                        background-color: #293342;
+                        //  border-right: 5px solid #417CD5;
+                        .group-info{
+                                color: #417CD5;
+                            }
+                    }
+                    .add-opponent-btn {
+                        width: 100px;
+                        height: 30px;
+                        border-radius: 2px;
+                        margin: 10px 0;
+                        margin-left: 38px;
+                        padding: 0;
+                        color: #A6A6A6;
+                        border-color: #535353;
+                        font-size: 12px;
+                        background-color: transparent;
+    
+                        .anticon + span {
+                            margin-left: 4px;
+                        }
+
+                        &:hover {
+                            border-color: #417CD5;
+                            background-color: #417CD5;
+                            color: #fff;
+                        }
+                    }
+                }
+                //分组没有数据
+                .no-group-container {
+                    display:block;
+                    vertical-align: middle;
+                    text-align: center;
+                    margin:0 auto;
+                    padding-top:100px;
+                    img {
+                        width: 70px;
+                        height: auto;
+                    }
+
+                    .no-group-title {
+                        color: #666;
+                        font-size: 14px;
+                        margin: 15px 0;
+                    }
+
+                    .create-group-btn {
+                        width: 190px;
+                        height: 37px;
+                        font-size: 12px;
+                        color: #A6A6A6;
+                        background-color: transparent;
+                        border: 1px dashed #535353;
+                        border-radius: 2px;
+
+                        &:hover {
+                            background-color:#417CD5;
+                            color: #fff;
+                            border: 1px solid #417CD5;
+                        }
+                    }
+                }
+
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    // height: 100%;
+                    width: 0;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    //侧边收缩或展开
+    .panel-toggle-minimize {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 80%;
+        left: 100%;
+        margin-top: -50px;
+        width: 10px;
+        height: 100px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: #191F28;
+    }
+}
+//竞争对手Modal
+    .ant-modal.addCompetitor{
+        .ant-modal-content{
+        background: #293342;
+        .ant-modal-close-x{
+            color: #ffffff;
+        }
+        .ant-modal-header{
+            background: #293342;
+                border-bottom:1px solid #191F28;
+            .ant-modal-title{
+                color:#D7D7D7;
+                user-select: none;
+            }
+        }
+        .ant-modal-body{
+            color: #A6A6A6;
+        }
+        .ant-modal-footer{
+            border-top:1px solid #191F28;
+            .ant-btn:first-child{
+                background: #191F28;
+                color: #878787;
+                border: none;
+            }
+            .ant-btn:last-child{
+                background: #417CD5;
+                color:#FFFFFF;
+                border: none;
+            }
+        }
+    }
+}
+//分组Modal
+ .ant-modal.addGroup{
+        .ant-modal-content{
+        background: #293342;
+        .ant-modal-close-x{
+            color: #ffffff;
+        }
+        .ant-modal-header{
+            background: #293342;
+                border-bottom:1px solid #191F28;
+            .ant-modal-title{
+                color:#D7D7D7;
+                user-select: none;
+            }
+        }
+        .ant-modal-body{
+            color: #A6A6A6;
+        }
+        .ant-modal-footer{
+            border-top:1px solid #191F28;
+            .ant-btn:first-child{
+                background: #191F28;
+                color: #878787;
+                border: none;
+            }
+            .ant-btn:last-child{
+                background: #417CD5;
+                color:#FFFFFF;
+                border: none;
+            }
+        }
+    }
+}

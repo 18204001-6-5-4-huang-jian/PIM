@@ -1,0 +1,306 @@
+.home-header{
+	width:100%;
+	height:60px;
+	line-height:60px;
+	background:#191F28;
+	/* margin-bottom:10px; */
+	/* overflow: hidden; */
+	padding:0.1px;
+}
+.home-header .logo{
+	float: left;
+	width: 120px;
+	margin: 14px 70px;
+	height:32px;
+	line-height:32px;
+	color: #ffffff;
+	font-size: 24px;
+	/* font-family: PingFangSC-Regular; */
+	background:url(../images/pim-logo.png) no-repeat;
+	background-size:100%; 
+    font-family: "PingFangSC-normal", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+}
+.home-header .bell-message{
+	float:right;
+	width: 20px;
+	height: 20px;
+	margin-top: 22px;
+	margin-right: 20px;
+	position: relative;
+	cursor: pointer;
+}
+.home-header .bell-message img{
+	width: 17.5px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.home-header .select-box{
+	float:right;
+	position: relative;
+	width: 220px;
+	height:40px;
+	line-height:40px;
+	margin-top: 12px;
+	margin-right: 30px;
+}
+.home-header .select-box .text{
+	border: none;
+	outline: none;
+	width: 220px;
+	height: 34px;
+	line-height: 34px;
+	border-radius: 100px;
+	text-indent: 10px;
+	background-color: rgba(14, 19, 26, 1);
+	border: 1px solid rgba(65, 65, 65, 1);
+	color:#ffffff;
+}
+.home-header .select-box .select-img{
+	position: absolute;
+	width: 17.91px;
+	height: 17.66px;
+	right:10px;
+	top:12px;
+	cursor: pointer;
+}
+.home-header .select-box .inputTip{
+	position: absolute;
+	width: 220px;
+	height: 300px;
+	left: 0;
+	top: 40px;
+	color:#A6A6A6;
+	z-index: 99999;
+	background: #191F28;
+	border-radius: 5px;
+	border: 1px solid #A6A6A6;
+}
+.home-header .select-box .inputTip ul{
+	width: 100%;
+	height: 100%;
+}
+.home-header .select-box .inputTip ul li:not(:first-child){
+   cursor: pointer;
+}
+.home-header .select-box .inputTip ul li{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-indent: 10px;
+}
+.home-header .select-box .inputTip ul li:hover{
+	background: #293342;
+	color:#D7D7D7;
+}
+.home-header .tabs{
+	display:flex;
+	justify-content: space-around;
+	align-content:center;
+	color:#ffffff;
+	margin-top:11px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+}
+.home-header .tabs .tabs_item{
+	width: 137px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 100px;
+	color: rgba(215,215,215,1);
+	padding:0 30px;
+	cursor: pointer;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.home-header .tabs .tabs_item_active{
+	width: 137px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 100px;
+	color:#ffffff !important;
+	background: #3A6BB1;
+	padding:0 30px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.tabs_item:first-child>.icon-tab{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	float:left;
+	margin-left:-14px;
+	margin-top: 10px;
+	background:url(../images/peizhi-moren.png) no-repeat center center;
+	background-size:100%;
+}
+.tabs_item_active:first-child>.icon-tab{
+	display:inline-block;
+	width:18px;
+	height:18px;
+	float:left;
+	margin-left:-14px;
+	margin-top: 10px;
+	background:url(../images/peizhi-jihuo.png) no-repeat center center;
+	background-size:100%;
+}
+.tabs_item:nth-child(2)>.icon-tab{
+    display:inline-block;
+	width:18px;
+	height:18px;
+	float:left;
+	margin-left:-14px;
+	margin-top: 10px;
+	background:url(../images/xinxi-moren.png) no-repeat center center;
+	background-size:100%;
+}
+.tabs_item_active:nth-child(2)>.icon-tab{
+    display:inline-block;
+	width:18px;
+	height:18px;
+	float:left;
+	margin-left:-14px;
+	margin-top: 10px;
+	background:url(../images/xinxi-jihuo.png) no-repeat center center;
+	background-size:100%;
+}
+.tabs_item:nth-child(3)>.icon-tab{
+    display:inline-block;
+	width:18px;
+	height:18px;
+	float:left;
+	margin-left:-14px;
+	margin-top: 10px;
+	background:url(../images/yunying-moren.png) no-repeat center center;
+	background-size:100%;
+}
+.tabs_item_active:nth-child(3)>.icon-tab{
+    display:inline-block;
+	width:18px;
+	height:18px;
+	float:left;
+	margin-left:-14px;
+	margin-top: 10px;
+	background:url(../images/yunying-jihuo.png) no-repeat center center;
+	background-size:100%;
+}
+.tabs_item:nth-child(4)>.icon-tab{
+    display:inline-block;
+	width:18px;
+	height:18px;
+	float:left;
+	margin-left:-14px;
+	margin-top: 10px;
+	background:url(../images/gongshang-moren.png) no-repeat center center;
+	background-size:100%;
+}
+.tabs_item_active:nth-child(4)>.icon-tab{
+    display:inline-block;
+	width:18px;
+	height:18px;
+	float:left;
+	margin-left:-14px;
+	margin-top: 10px;
+	background:url(../images/gongshang-jihuo.png) no-repeat center center;
+	background-size:100%;
+}
+.tabs_item:nth-child(5)>.icon-tab{
+    display:inline-block;
+	width:18px;
+	height:18px;
+	float:left;
+	margin-left:-14px;
+	margin-top: 10px;
+	background:url(../images/yuqing-moren.png) no-repeat center center;
+	background-size:100%;
+}
+.tabs_item_active:nth-child(5)>.icon-tab{
+    display:inline-block;
+	width:18px;
+	height:18px;
+	float:left;
+	margin-left:-14px;
+	margin-top: 10px;
+	background:url(../images/yuqing-jihuo.png) no-repeat center center;
+	background-size:100%;
+}
+.text-tab{
+	display:inline-block;
+}
+.home-header-popver{
+	width: 200px;
+	height: 40px;
+	line-height:40px;
+	float:right;
+	margin-top:12px;
+	margin-right:5px;
+    cursor: pointer;
+}
+.home-header-popver::after{
+	content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+	border-width: 6px 4px 0 4px;
+	/* border-color: #ffffff transparent transparent transparent; */
+    border-color: #999 transparent transparent transparent;
+	transition:transform .3s ease;
+}
+.home-header-popver-active::after{
+	transform: rotateZ(180deg);
+}
+.home-header-popver-headimg{
+	width:26px;
+	height:26px;
+	border-radius: 50%;
+	float: left;
+	margin-top: 6.5px;
+}
+.home-header-popver-headimg img{
+	width:26px;
+	height:26px;
+	border-radius: 50%;
+	vertical-align: top;
+}
+.home-header-popver-email{
+	float: left;
+	padding: 0 3px;
+	color:rgba(255,255,255,1);
+	font-size: 15px;
+}
+.ant-popover-inner{
+	overflow: hidden;
+}
+.ant-popover-title,.ant-popover-inner-content .name,.ant-popover-inner-content .email,.ant-popover-inner-content .head-img,.ant-popover-inner-content .logout{
+	font-size:14px;
+	font-weight:bold;
+	margin-top: 3px;
+	text-align:center;
+}
+.ant-popover-inner-content .logout{
+   height:30px;
+   line-height: 30px;
+   border-radius: 5px;
+   cursor: pointer;
+   border: 1px solid #999999;
+}
+.ant-popover-inner-content .head-img{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+.ant-popover-inner-content .head-img img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}

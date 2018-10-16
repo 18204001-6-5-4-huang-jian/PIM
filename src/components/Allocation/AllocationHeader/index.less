@@ -1,0 +1,73 @@
+.allocation-header {
+    background-color: #0D131A;
+    padding-bottom: 10px;
+
+    &-right {
+        float: right;
+        height: 40px;
+
+        .ant-select-selection {
+            background-color: #0c131b;
+        }
+
+        .ant-select-search {
+            &__field {
+                input {
+                    width: 220px;
+                    color: #80848F;
+                    border: 1px solid #414141;
+                    border-radius: 25px;
+                }
+
+                .ant-input-suffix {
+                    // transform: rotate(-90deg);
+                    // top: 30%;
+    
+                    i.anticon {
+                        color: #999;
+                    }
+                }
+            }
+        }
+
+        .btn {
+            background-color: transparent;
+            border: 0 none;
+            color: #A9B3C2;
+            padding-left: 30px;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            &:focus {
+                border: 0 none;
+            }
+        }
+
+        .add-company-btn {
+            background-image: url('../../../images/icon_add.png');
+            background-size: 24px 24px;
+        }
+
+        .export-btn {
+            background-image: url('../../../images/out.png');
+            background-size: 14px 14px;
+        }
+
+        .change-btn {
+            background-image: url('../../../images/vice.png');
+            background-size: 14px 14px;
+        }
+    }
+}
+
+.ant-select-dropdown {
+    &-menu {
+        .search-keyword {
+            color: #F8292B;
+        }
+
+        .autocomplete-option {
+            background-color: #293342;
+        }
+    }
+}
